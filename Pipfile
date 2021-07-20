@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+azure-functions = "*"
+numpy = "*"
+onnx = "*"
+onnxruntime = "*"
+opencv-python = "*"
+torch = "*"
+torchvision = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+start = "func start"
+deploy = "func azure functionapp publish <your_project> --python"
